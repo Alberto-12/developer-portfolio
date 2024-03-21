@@ -10,79 +10,128 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="index.css" />
 
-    <title>Frontend Mentor | Single-page developer portfolio</title>
+    <title>Alberto Serafini developer portfolio</title>
   </head>
   <body>
-    <p>albertoSerafini</p>
+    <div class="container">
+      <header>
+        <div class="profile-picture-container">
+          <p class="name">albertoserafini</p>
+          <div class="links-container">
+            <a href="https://github.com" target="_blank">
+              <img
+                src="./assets/images/icon-github.svg"
+                alt="GitHub"
+                width="20"
+                height="20"
+              />
+            </a>
 
-    <a href=""></a>
-    <a href=""></a>
+            <a href="https://linkedin.com" target="_blank">
+              <img
+                src="./assets/images/icon-linkedin.svg"
+                alt="linkedin"
+                width="20"
+                height="20"
+              />
+            </a>
+          </div>
+        </div>
+        <h1 class="intro-heading">Nice to meet you! I'm Alberto Serafini.</h1>
+        <p class="summary-paragraph">
+          Based in Richmond VA, I'm a front-end developer passionate about
+          building accessible web apps that users love.
+        </p>
+        <h2 class="contactme-button">Contact me</h2>
+      </header>
 
-    <h1>Nice to meet you! I'm Alberto Serafini.</h1>
+      <section class="skills-container">
+        <h1 class="languages">HTML</h1>
+        <p class="yearsof-experience">4 Years Experience</p>
 
-    <p>
-      Based in Richmond VA, I'm a front-end developer passionate about building
-      accessible web apps that users love.
-    </p>
+        <h1 class="languages">CSS</h1>
+        <p class="yearsof-experience">4 Years Experience</p>
 
-    <h2>Contact me</h2>
-    <div>
-      <h1>HTML</h1>
-      <p>4 Years Experience</p>
+        <h1 class="languages">JavaScript</h1>
+        <p class="yearsof-experience">4 Years Experience</p>
 
-      <h1>CSS</h1>
-      <p>4 Years Experience</p>
+        <h1 class="languages">Accessibility</h1>
+        <p class="yearsof-experience">4 Years Experience</p>
 
-      <h1>JavaScript</h1>
-      <p>4 Years Experience</p>
+        <h1 class="languages">React</h1>
+        <p class="yearsof-experience">3 Years Experience</p>
+      </section>
+      <section class="projects-section">
+        <div class="projects-title">
+          <h1 class="projects-heading">Projects</h1>
+          <p class="contactme-button">Contact me</p>
+        </div>
+      
+      <div class="project-container"></div>
+      <h2 class="project-heading">Design portfolio</h2>
+      <div class="langauges-div">
+        <p class="language-paragraph">HTML</p>
+        <p class="language-paragraph">CSS</p>
+      </div>
+      <div class="projects-links-container">
+        <h2 class="projects-link">View project</h2>
+        <h2 class="projects-link">View code</h2>
+      </div>
+      <div class="second-project-container"></div>
+      <h2 class="project-heading">e-learning landing page</h2>
+      <div class="langauges-div">
+        <p class="language-paragraph">HTML</p>
+        <p class="language-paragraph">CSS</p>
+      </div>
+      <div class="projects-links-container">
+        <h2 class="projects-link">View project</h2>
+        <h2 class="projects-link">View code</h2>
+      </div>
+      <div class="third-project-container"></div>
+      <h2 class="project-heading">Design portfolio</h2>
+      <div class="langauges-div">
+        <p class="language-paragraph">HTML</p>
+        <p class="language-paragraph">CSS</p>
+      </div>
+      <div class="projects-links-container">
+        <h2 class="projects-link">View project</h2>
+        <h2 class="projects-link">View code</h2>
+      </section>
+      <section class="contact-section">
+      <h1 class="contact-heading">Contact</h1>
+      <p class="contact-paragraph">
+        I would love to hear about your project and how I could help. Please
+        fill in the form, and I’ll get back to you as soon as possible.
+      </p>
+      <form action="YOUR_SERVER_ENDPOINT_HERE" method="POST">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="name"
+          required
+        /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email"
+          required
+        /><br />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="message"
+          style="height: 50px"
+          required
+        ></textarea
+        ><br />
 
-      <h1>Accessibility</h1>
-      <p>4 Years Experience</p>
-
-      <h1>React</h1>
-      <p>3 Years Experience</p>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
     </div>
-    <div>
-      <h1>Projects</h1>
-      <p>Contact me</p>
-    </div>
-
-    <div></div>
-    <h2>Design portfolio</h2>
-    <div>
-      <p>HTML</p>
-      <p>CSS</p>
-    </div>
-    <div>
-      <h2>View project</h2>
-      <h2>View code</h2>
-    </div>
-    <div></div>
-    <h2>Design portfolio</h2>
-    <div>
-      <p>HTML</p>
-      <p>CSS</p>
-    </div>
-    <div>
-      <h2>View project</h2>
-      <h2>View code</h2>
-    </div>
-    <div></div>
-    <h2>Design portfolio</h2>
-    <div>
-      <p>HTML</p>
-      <p>CSS</p>
-    </div>
-    <div>
-      <h2>View project</h2>
-      <h2>View code</h2>
-    </div>
-    <h1>Contact</h1>
-    <p>
-      I would love to hear about your project and how I could help. Please fill
-      in the form, and I’ll get back to you as soon as possible.
-    </p>
-    <form action="">Name Email Message Send message</form>
   </body>
 </html>
