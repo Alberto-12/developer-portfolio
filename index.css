@@ -22,23 +22,26 @@ body {
   align-items: center;
 }
 
-header {
+.name-links-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 92px;
 }
 
 .profile-picture-container {
   width: 174px;
-  height: 383px;
-  background-image: url("./assets/images/image-profile-mobile.webp");
+  height: 280px;
+  background-image: url("./assets/images/my-photo.jpg");
+  background-repeat: no-repeat;
   background-size: contain;
+  background-color: #151515;
+  margin-bottom: 20px;
+}
+
+.contact-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #151515;
-  margin-bottom: 40px;
 }
 
 .name {
@@ -51,6 +54,12 @@ header {
   letter-spacing: -0.333px;
   color: #fff;
   margin-top: 20px;
+}
+
+.intro-summary-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro-heading {
@@ -124,8 +133,6 @@ header {
   margin-bottom: 20px;
 }
 
-
-
 .projects-title {
   display: flex;
   align-items: center;
@@ -154,7 +161,7 @@ header {
 
 .project-heading {
   color: #fff;
-  font-feature-settings: "clig"off, "liga"off;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: "Space Grotesk";
   font-size: 24px;
   font-style: normal;
@@ -172,7 +179,7 @@ header {
 
 .language-paragraph {
   color: #d9d9d9;
-  font-feature-settings: "clig"off, "liga"off;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: "Space Grotesk";
   font-size: 18px;
   font-style: normal;
@@ -186,7 +193,6 @@ header {
   justify-content: space-between;
   margin-bottom: 40px;
   width: 80%;
-
 }
 
 .projects-link {
@@ -220,7 +226,7 @@ header {
 }
 
 .contact-heading {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Space Grotesk";
   font-size: 40px;
@@ -244,17 +250,18 @@ header {
   margin-bottom: 40px;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: #151515;
   border: none;
   outline: none;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
   /* Customize the color as needed */
   padding: 10px 0;
   margin: 10px 0;
   width: 100%;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
 }
 
 button {
@@ -264,7 +271,7 @@ button {
   /* Adjust as needed */
   background-color: #151515;
   border: none;
-  color: #FFF;
+  color: #fff;
   font-family: "Space Grotesk";
   font-size: 16px;
   font-style: normal;
@@ -276,4 +283,128 @@ button {
   margin-bottom: 50px;
   margin-left: 40%;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1208px) {
+  .contact-div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .profile-picture-container {
+    background-image: url("./assets/images/my-photo.jpg");
+    background-repeat: no-repeat;
+    width: 349.854px;
+    height: 386px;
+  }
+
+  .name-links-div {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .intro-heading {
+    font-size: 72px;
+  }
+
+  .summary-paragraph {
+    font-size: 18px;
+  }
+
+  .languages {
+    font-size: 48px;
+  }
+
+  .yearsof-experience {
+    font-size: 18px;
+  }
+
+  .projects-heading {
+    font-size: 72px;
+  }
+
+  .contactme-button {
+    font-size: 16px;
+  }
+
+  .project-heading {
+    font-size: 24px;
+  }
+
+  .language-paragraph {
+    font-size: 24px;
+  }
+
+  .projects-link {
+    font-size: 16px;
+  }
+
+  .contact-heading {
+    font-size: 72px;
+  }
+
+  .contact-paragraph {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  
+  .links-container {
+    margin-top: 20px;
+  }
+
+  .intro-summary-div {
+    align-items: start;
+  }
+
+  .intro-heading {
+    text-align: start;
+  }
+
+  .summary-paragraph {
+    text-align: start;
+  }
+
+  .github-link {
+    padding-right: 10px;
+  }
+
+  .intro-summary-div {
+    margin-left: 30px;
+  }
+
+  .skills-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    grid-auto-rows: auto; /* Rows size according to the content */
+    gap: 20px; /* Space between grid items */
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+  gap: 20px; /* Space between the grid items */
+}
+
+
+}
+
+@media only screen and (min-width: 1280px) {
+
 }
