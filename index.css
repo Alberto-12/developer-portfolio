@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #EBE0E4;
 }
 
 .container {
@@ -28,9 +29,9 @@ body {
   align-items: center;
   width: 100%;
   background-image: url("./assets/images/Al\ photo-min-min\ 3.png");
-  background-repeat: no-repeat;
-  background-size: 60% 50%;
-  background-position: center  10%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 242px 242px;
+  background-position: center  20% ;
   margin-bottom: 20px;
 }
 
@@ -41,28 +42,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 70%;
+  
   margin-top: 10px;
+  height: auto;
 }
 
-/*.profile-picture-container {
-  width: 174px;
-  height: 280px;
-  background-image: url("./assets/images/my-photo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #151515;
-  margin-bottom: 40px;
-}*/
 
-.contact-div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 80px;
-
-}
 
 .name {
   font-family: "Space Grotesk";
@@ -80,6 +65,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 423px;
+  margin-bottom: 80px;
   
 }
 
@@ -117,8 +104,13 @@ body {
   font-weight: 700;
   line-height: 26px;
   /* 162.5% */
+  cursor: pointer;
   letter-spacing: 2.286px;
   border-bottom: 2px solid #BF5A7F;
+}
+
+.contactme-button:hover {
+  color:#BF5A7F
 }
 
 .skills-container {
@@ -231,6 +223,11 @@ body {
   letter-spacing: 2.286px;
   border-bottom: 2px solid #BF5A7F;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.projects-link:hover {
+  color: #BF5A7F;
 }
 
 .second-project-container {
@@ -324,22 +321,35 @@ button {
   border-bottom: 1px solid #BF5A7F;
   margin-bottom: 50px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #BF5A7F;
 }
 
 
 
 @media (min-width: 768px) {
-  .contact-div {
-    flex-direction: row-reverse;
-    align-items: stretch;
+
+  .intro-summary-div {
+    align-items: start;
+    margin-top: 0;
   }
 
-  .profile-picture-container {
-    background-image: url("./assets/images/my-photo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 500px;
-    height: 400px;
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+  }
+
+
+  .contain {
+    background-position: right top;
+    background-size: 349px 349px;
+    align-items: start;
+    
     
   }
 
@@ -348,6 +358,7 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10%;
   }
 
   form {
@@ -445,16 +456,14 @@ button {
     gap: 20px; /* Space between grid items */
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
-  gap: 20px; /* Space between the grid items */
-}
-
 
 }
 
 @media (min-width: 1024px) {
+
+  .container {
+    width: 90%;
+  }
 
   .contact-section {
     flex-direction: row;
@@ -464,19 +473,22 @@ button {
     width: 40%
   }
 
-  /*.projects-container {
-    width: 440px;
-    height: 300px;
+  .contain {
+    
+    background-size: 540px 540px;
+   
+    
+    
   }
 
-  .second-project-container {
-    width: 440px;
-    height: 300px;
+  .intro-summary-div {
+    
+    margin-bottom: 219px;
+    
   }
 
-  .third-project-container {
-    width: 440px;
-    height: 300px;
-  }*/
+  
+
+
   
 }
