@@ -289,18 +289,33 @@ form {
   width: 70%;
 }
 
-input,
+/*input,
 textarea {
   background-color: #EBE0E4;
   border: none;
   outline: none;
   border-bottom: 1px solid #403D52;
-  /* Customize the color as needed */
+  /* Customize the color as needed 
   padding: 10px 0;
   margin: 10px 0;
   width: 100%;
   text-transform: uppercase;
-  color: #403D52;;
+  color: #403D52;
+}*/
+
+input, textarea {
+  background-color: #EBE0E4;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #403D52; /* Customize the color as needed */
+  padding: 10px 0;
+  margin: 10px 0;
+  width: 100%;
+  color: #403D52;
+}
+
+input::placeholder, textarea::placeholder {
+  text-transform: uppercase; /* Uppercase placeholder */
 }
 
 button {
